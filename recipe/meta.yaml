@@ -23,6 +23,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - click
+    - cql2
     - croniter
     - lxml
     - mapchete >=2025.6.0
