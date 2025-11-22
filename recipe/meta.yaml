@@ -20,9 +20,10 @@ requirements:
     - python {{ python_min }}
     - hatchling
     - pip
+    - pip:
+      - cql2    
   run:
     - python >={{ python_min }}
-    - pip
     - click
     - croniter
     - lxml
@@ -37,8 +38,6 @@ requirements:
     - scipy
     - tqdm
     - xarray
-    - pip:
-      - cql2
 
 test:
   imports:
