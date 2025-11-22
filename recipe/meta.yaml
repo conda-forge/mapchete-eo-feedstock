@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mapchete_eo-{{ version }}.tar.gz
-  sha256: d00647e926b55c8efafbada7cba9e1949608d80bb11b8249aef68db03ca8090f
+  sha256: 1f13f8beb2571cb12916f6a40aae866040b4cc72ba9a1b7c4c2af4eff068d535
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
