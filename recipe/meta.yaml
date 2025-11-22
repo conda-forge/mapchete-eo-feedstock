@@ -21,7 +21,7 @@ requirements:
     - hatchling
     - pip
     - pip:
-      - cql2    
+      - cql2
   run:
     - python >={{ python_min }}
     - click
@@ -38,6 +38,9 @@ requirements:
     - scipy
     - tqdm
     - xarray
+    - pip
+    - pip:
+      - cql2
 
 test:
   imports:
