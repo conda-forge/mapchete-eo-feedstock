@@ -22,8 +22,8 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
+    - pip
     - click
-    - cql2
     - croniter
     - lxml
     - mapchete >=2025.6.0
@@ -37,6 +37,8 @@ requirements:
     - scipy
     - tqdm
     - xarray
+    - pip:
+      - cql2
 
 test:
   imports:
