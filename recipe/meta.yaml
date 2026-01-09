@@ -1,5 +1,5 @@
 {% set name = "mapchete-eo" %}
-{% set version = "2025.10.1" %}
+{% set version = "2026.1.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mapchete_eo-{{ version }}.tar.gz
-  sha256: d00647e926b55c8efafbada7cba9e1949608d80bb11b8249aef68db03ca8090f
+  sha256: 34eb934ee3bb9e08655ebb5f898301e9f2fb5f2736009569fa627c24aaf2ae84
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
@@ -19,7 +19,6 @@ requirements:
   host:
     - python {{ python_min }}
     - hatchling
-    - pip
   run:
     - python >={{ python_min }}
     - click
@@ -29,6 +28,7 @@ requirements:
     - opencv
     - pillow
     - pydantic
+    - pygeofilter
     - pystac >=1.12.2
     - pystac-client >=0.7.5
     - retry
