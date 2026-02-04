@@ -1,5 +1,5 @@
 {% set name = "mapchete-eo" %}
-{% set version = "2026.1.0" %}
+{% set version = "2026.2.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mapchete_eo-{{ version }}.tar.gz
-  sha256: 34eb934ee3bb9e08655ebb5f898301e9f2fb5f2736009569fa627c24aaf2ae84
+  sha256: 168d2af59cedc92503089263ce1a545f423cef506796ba4c03c35c2537d25085
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
